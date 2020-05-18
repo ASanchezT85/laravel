@@ -1,79 +1,41 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+## php artisan send:post [EN]
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+With this command, send a simple POST request to the URL: https://atomic.incfile.com/fakepost from which the following results are obtained:
 
-## About Laravel
+- Due to the fact that the route is ficiticia an error 404 is obtained.
+- Simulating with another URL (http://httpbin.org), different results were forced.
+    + Error 405: forming different methods
+    + SSL certificate location error
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### In response to points 4 and 5 [EN]
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Answer: The guzzlehttp / guzzle dependency or package has been implemented: to handle requests or requests to external APIs or URLs, this achieves the following:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- The pericion or request will always reach its destination, and the aforementioned errors (404, 405, SSL) can be obtained.
+- Because guzzlehttp / guzzle is a request handler, it can queue requests to get answers to multiple requests, and give answers to all of them.
+- It is important to mention that with current 100K technology it is nothing, but it should be considered that the server supports such a number of requests simultaneously.
 
-## Learning Laravel
+It is important to mention that for this practical exercise a dependency or package already pre-installed in laravel was implemented, but you can use REDIS and create a more complete command of the requests.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## php artisan send:post [ES]
 
-## Laravel Sponsors
+Con este comando envia una simple peticion POST a la URL: https://atomic.incfile.com/fakepost de la que obtienen los siguintes resultados:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Devido a que la ruta es ficiticia se obtiene un error 404.
+- Simulando con otra URL (http://httpbin.org), se forzaron diferentes resultados.
+    + Error 405: formzando diferentes metodos.
+    + Error de localización del cerficado SSL
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+### En respuesta a los puntos 4 y 5 [ES]
 
-## Contributing
+Respuesta: Se ha implementado la dependencia o paquete guzzlehttp/guzzle:  para el manejo de peticiones o solicitudes a API o URL externas, con esto se logra lo siguiente:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- La pericion o solicitud siempre llegara a su destino, y se puede obtener los error antes mencionados (404, 405, SSL).
+- Debido a que guzzlehttp/guzzle es un manejador de peticiones este puede encolar las peticiones para obtener respuestas a multiples solicitudes, y dar respuestas a toda ellas. 
+- Es importante mencionar que con la tecnología actual 100K no es nada, pero si se debe considerar que el servidor soporte tal numero de peticiones simultaneamente.
 
-## Code of Conduct
+Es importante mencionar que para este ejecicio practico se implemento una dependencia o paquete ya pre-instaldo en laravel, pero se puedes utilizar REDIS y crear un comando mas completo de las peticiones.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
